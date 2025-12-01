@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111010;
+    color: #EEF7F0;
+    font-family: "Roboto", sans-serif;
+}
+
+h1{
+    font-family: "Goldman", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    font-size: 1.1rem;
+    width: 100%;
+    height: 7%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 2rem;
+}
+nav ul li{
+    margin: 0 1rem;
+}
+
+nav ul li a:hover {
+    color: #b9b9b9;
+    font-weight: 100;
+    transition: 0.3s;
+}
+
+hero {
+    height: 92vh;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 6.5fr 3.5fr;
+}
+
+hero img {
+    width: 100%;
+    height: 95vh;
+    object-fit: cover;
+    border-radius: 0px 10px 10px 0px;
+}
+
+hero img {
+    animation: moveLR 2s linear 1;
+}
+
+@keyframes moveLR {
+    0%   { transform: translateX(-500px); }    
+    100% { transform: translateX(0); }   
+}
+
+.heroTitle {
+    text-align: right;
+    position: absolute;
+    margin-top: 33%;
+    left: 30%;
+    z-index: 5;
+}
+
+.heroTitle h1 {
+    font-size: 10rem;
+    margin-bottom: -2rem;
+}
+
+section {
+    padding-top: 7rem;
+}
+
+.section1 {
+    position: relative;
+}
+
+.section1Img {
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+.section1 p {
+    z-index: 5;
+    font-size: 1.2rem;
+    position: absolute;
+    color: #ADA6A6;
+    margin: 2rem;
+}
+
+.texto1{
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    top: 40%;
+    font-size: 3.5rem;
+    padding: 1rem;
+}
+
+.section1Migel {
+    position: absolute;
+    top: 35% ;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.section1Danny{
+    text-align: right;
+    margin-top: 13rem;
+    border-radius: 10px;
+}
+.containerDanny{
+    text-align: right;
+    padding-right: 6rem;
+}
+
+.callToActoin{
+    position: absolute;
+    top: 75%;
+    margin-left: 16rem;
+}
+
+.callToActoin h3{
+    width: 60rem;
+    font-size: 3rem;
+}
+
+.callToActoin button{
+    margin-top: 4rem;
+    margin-left: 4rem;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    background-color: #ffffff00;
+    color: #EEF7F0;
+    border: 2px solid #EEF7F0;
+    border-radius: 5px 0px 5px 0px;
+    cursor: pointer;
+}
+
+.nameContainer{
+    width: 100%;
+    overflow: hidden;
+    margin-top: -15rem;
+}
+
+.track{
+    display: flex;
+    width: max-content;
+    animation: scroll-left 300s linear infinite;
+}
+
+.trackR{
+    display: flex;
+    width: max-content;
+    animation: scroll-right 300s linear infinite;
+}
+
+@keyframes scroll-left {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+@keyframes scroll-right {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+.name{
+    font-size: 10rem;
+    font-family: "Goldman", sans-serif;
+    color: #eef7f000;
+    -webkit-text-stroke: 2px rgb(99, 96, 96); 
+    padding-right: 7rem;  
+}
+
+.section2{
+    position: relative;
+    margin-top: -5rem;
+}
+
+.section2Migel img{
+    width: 60%;
+}
+
+.section2Danny{
+    position: absolute;
+    width: 100%;
+}
+.section2Danny img{
+    width: 35%;
+    margin-left: 55%;
+    margin-top: -1000rem;
+    margin-bottom: 35rem;
+    border-radius: 10px;
+}
+
+.section2 p{
+    position: absolute;
+    width: 30rem;
+    font-size: 3rem;
+    color: #EEF7F0;
+    left: 45%;
+    z-index: 5;
+}
+
+footer{
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    border-top: 1px solid #eef7f079;
+    margin-top: 1rem;
+}
+
+footer div {
+    margin-top: 1.5rem;
+}
