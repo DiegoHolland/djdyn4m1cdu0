@@ -1,0 +1,44 @@
+/* Laptop Macbook Air*/
+@media (max-width: 2560px) {
+    .heroTitle h1{
+        font-size: 7.7rem;
+    }
+    .texto1{
+        font-size: 3rem;
+    }
+    .section1Migel {
+        max-width: 40rem;
+    }
+    .section1Danny {
+        max-width: 40rem;
+    }
+    .callToActoin{
+        margin-left: 10rem;
+    }
+    .callToActoin h3 {
+        width: 40rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1024px){
+    nav{
+        font-size: 0.7rem;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    hero{
+        grid-template-columns: 1fr;
+    }
+    .heroTitle h1{
+        font-size: 5.4rem;
+        margin-top: 8%;
+        margin-bottom: -1rem;
+    }
+    .section1Img{
+        max-width: 1024px;
+        width: 100%;
+        height: auto;
+    }
+}
